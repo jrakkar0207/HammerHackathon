@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>My Cool Website
+
+           <style>
+               img {
+                   width: 680px;
+                   height: auto;
+           }
+           </style>
+       </title>
+   </head>
+   <body>
+       <h1>My Cool Website</h1>
+       <p>I think HTML is neat</p>
+
+       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Anatomy_of_a_Sunset-2.jpg/2560px-Anatomy_of_a_Sunset-2.jpg"
+
+       <bockquote> " I looked "</bockquote>
+       <button onclick="changeQuote()">Change the quote</button>
+
+       <script>
+           var index = 0;
+           function changeQuote() {
+               var quotes = [
+                   '"I really like web devolopment! - Dhyan',
+                   '"I am enjoying my time at hammer hakcs! - DHyan',
+                   '"gg',
+                   '"no maybe yes',
+               ]
+
+               var blockquote = document.querySelector("blockquote");
+               blockquote.innerHTML = quotes[index]
+
+               index++;
+               if (index>= 4){
+                   index = 0;
+               }
+           }
+
+       </script>
+   </body>
+</html>
